@@ -1,0 +1,15 @@
+.marquee {
+    animation: marquee 12s linear infinite;
+}
+
+.marquee::after {
+    content: " AVAILABLE FOR FREELANCE WORK ●";
+}
+
+
+@keyframes marquee {
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
