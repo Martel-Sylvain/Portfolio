@@ -4,7 +4,7 @@ import { gsap } from "gsap";
 const TextAnimate = () => {
     const textRef = useRef(null);
     const [currentTextIndex, setCurrentTextIndex] = useState(0);
-    const texts = ["Hello World!", "Welcome to GSAP", "Enjoy Animations"];
+    const texts = ["Front-End Developer", "Back-End Developer", "Full Stack Developer"];
 
     useEffect(() => {
         const animateText = () => {
@@ -39,7 +39,7 @@ const TextAnimate = () => {
                                     setCurrentTextIndex((prev) => (prev + 1) % texts.length);
                                 }
                             });
-                        }, 2000); // Wait 2 seconds before starting the fade out animation
+                        }, 1500); // Wait 2 seconds before starting the fade out animation
                     }
                 }
             );
@@ -49,7 +49,7 @@ const TextAnimate = () => {
     }, [currentTextIndex]);
 
     return (
-        <div className="text-3xl font-font2 font-normal text-customWhite">
+        <div className="text-3xl mt-6 font-font21 font-normal text-customWhite">
             <div ref={textRef}></div>
         </div>
     );

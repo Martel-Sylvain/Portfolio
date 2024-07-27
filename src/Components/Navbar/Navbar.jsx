@@ -11,15 +11,15 @@ const Navbar = () => {
     const [showMenu, setShowMenu] = useState(false);
     const [isHoveredHamburger, setIsHoveredHamburger] = useState(false);
 
-    const getActiveLinkColor = (isActive) => `${isActive ? "text-customBlue" : "text-customWhite"} lg:text-xl xl:text-2xl font-font1 drop-shadow-custom hover:text-customBlue transition duration-300 py-2 md:py-0`;
+    const getActiveLinkColor = (isActive) => `${isActive ? "text-customBlue" : "text-customWhite"} lg:text-xl xl:text-2xl font-font22 drop-shadow-custom py-2 md:py-0`;
     const getHamburgerIcon = (isHoveredHamburger) => isHoveredHamburger ? hamburgerHovered : hamburger;
     const getCrossIcon = (isHoveredHamburger) => isHoveredHamburger ? crossHovered : cross;
 
     return (
-        <nav className='fixed top-0 w-full flex justify-between items-center z-50 border-b-2 border-customWhite'>
+        <nav className='fixed top-0 w-full flex justify-center items-center z-50 border-b-2 border-customWhite bg-customBlack'>
             <div className={`${showMenu ? "flex" : "hidden"} flex-col items-center w-full absolute top-full py-2 md:flex md:relative md:flex-row md:pb-2 md:justify-around`}>
                 <NavLink to="/" className={({ isActive }) => getActiveLinkColor(isActive)}>
-                    {({ isActive }) => <HoveredText text="Home" isActive={isActive} />}
+                    {({ isActive }) => <HoveredText text="sylvainmartel" isActive={isActive} />}
                 </NavLink>
                 <Marquee />
                 <NavLink to="/Projects" className={({ isActive }) => getActiveLinkColor(isActive)}>

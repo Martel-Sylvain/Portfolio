@@ -3,16 +3,89 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'Roboto';
+    font-family: 'RobotoBlackItalic';
+    src: url('./assets/Fonts/Roboto-BlackItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'RobotoLight';
+    src: url('./assets/Fonts/Roboto-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'RobotoMedium';
+    src: url('./assets/Fonts/Roboto-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'RobotoRegular';
     src: url('./assets/Fonts/Roboto-Regular.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'Kanit';
+    font-family: 'RobotoThinItalic';
+    src: url('./assets/Fonts/Roboto-ThinItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'RobotoThin';
+    src: url('./assets/Fonts/Roboto-Thin.ttf') format('truetype');
+}
+
+
+
+
+@font-face {
+    font-family: 'KanitBold';
+    src: url('./assets/Fonts/Kanit-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'KanitLightItalic';
+    src: url('./assets/Fonts/Kanit-LightItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'KanitMedium';
+    src: url('./assets/Fonts/Kanit-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'KanitRegular';
     src: url('./assets/Fonts/Kanit-Regular.ttf') format('truetype');
 }
 
 @font-face {
+    font-family: 'KanitSemiBoldItalic';
+    src: url('./assets/Fonts/Kanit-SemiBoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'KanitThin';
+    src: url('./assets/Fonts/Kanit-Thin.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'KanitLight';
+    src: url('./assets/Fonts/Kanit-Light.ttf') format('truetype');
+}
+
+
+
+@font-face {
     font-family: 'SquareSpace';
     src: url('./assets/Fonts/Square-Space.ttf') format('truetype');
+}
+
+
+
+@font-face {
+    font-family: 'DeathStar';
+    src: url('./assets/Fonts/Death-Star-Outlines.otf') format('opentype');
+}
+
+
+
+body {
+    overflow: hidden;
 }

@@ -24,7 +24,7 @@ const HoveredText = ({ text, isActive }) => {
                     duration: 0.3,
                     delay: index * 0.1,
                     onComplete: () => {
-                        span.style.fontFamily = 'Courier New'; // Change to your desired font
+                        span.style.fontFamily = 'SquareSpace'; // Change to your desired font
                         gsap.to(span, {
                             rotateX: 0,
                             duration: 0.3
@@ -41,7 +41,7 @@ const HoveredText = ({ text, isActive }) => {
                     duration: 0.3,
                     delay: index * 0.1,
                     onComplete: () => {
-                        span.style.fontFamily = 'Roboto'; // Change to your original font
+                        span.style.fontFamily = 'KanitMedium'; // Change to your original font
                         gsap.to(span, {
                             rotateX: 0,
                             duration: 0.3
@@ -61,7 +61,7 @@ const HoveredText = ({ text, isActive }) => {
     }, [text]);
 
     return (
-        <div className={`relative flex justify-center items-center perspective-[1000px] w-[150px] h-[50px] ${isActive ? 'text-customBlue' : 'text-customWhite'}`}>
+        <div className={`relative flex justify-center items-center perspective-[1000px] w-[170px] h-[50px] ${isActive ? 'text-customBlue' : 'text-customWhite'}`}>
             <div className='text-2xl relative' ref={textRef}>
                 {text}
             </div>
