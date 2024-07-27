@@ -8,6 +8,8 @@ const TextAnimate = () => {
 
     useEffect(() => {
         const animateText = () => {
+            if (!textRef.current) return; // Ajout de la vérification
+
             const text = texts[currentTextIndex];
             textRef.current.innerHTML = "";
 
@@ -29,6 +31,7 @@ const TextAnimate = () => {
                     ease: "power2.out",
                     onComplete: () => {
                         setTimeout(() => {
+                            if (!textRef.current) return; // Ajout de la vérification
                             gsap.to(textRef.current.children, {
                                 opacity: 0,
                                 y: -20,
@@ -39,7 +42,7 @@ const TextAnimate = () => {
                                     setCurrentTextIndex((prev) => (prev + 1) % texts.length);
                                 }
                             });
-                        }, 1500); // Wait 2 seconds before starting the fade out animation
+                        }, 1500); // Wait 1.5 seconds before starting the fade out animation
                     }
                 }
             );

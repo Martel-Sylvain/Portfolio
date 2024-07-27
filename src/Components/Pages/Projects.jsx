@@ -1,9 +1,14 @@
 import React from 'react'
+import HorizontalScroll from '../HorizontalScroll/HorizontalScroll'
+
 
 const Projects = () => {
     return (
-        <div className="w-screen h-screen flex items-center justify-center bg-customBlack">
-            <h1 className='text-customWhite'>Projects</h1>
+
+        <div>
+
+            <HorizontalScroll />
+
         </div>
     )
 }

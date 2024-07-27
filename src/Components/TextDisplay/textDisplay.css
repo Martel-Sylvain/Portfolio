@@ -1,17 +1,20 @@
-.fade-enter {
-    opacity: 0;
+.text-display-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
 }
 
-.fade-enter-active {
+.fade-in {
     opacity: 1;
-    transition: opacity 800ms;
+    transition: opacity 0.5s ease-in;
 }
 
-.fade-exit {
-    opacity: 1;
-}
-
-.fade-exit-active {
+.fade-out {
     opacity: 0;
-    transition: opacity 800ms;
+    transition: opacity 0.5s ease-out;
+}
+
+.absolute {
+    position: absolute;
 }

@@ -1,7 +1,6 @@
 import React from 'react';
 import { gsap } from "gsap";
 
-
 const EmailButton = () => {
     const handleMouseEnter = (index) => {
         // Anime la lettre actuelle
@@ -17,16 +16,13 @@ const EmailButton = () => {
             gsap.to(`#letter-${index - 2}`, { color: '#a3e5ed', duration: 0.2 });
         }
 
-
-
-
         // Anime la lettre à droite si elle existe
         if (index < 14) {
             gsap.to(`#letter-${index + 1}`, { color: '#5adeed', duration: 0.2 });
         }
 
         // Anime la lettre à droite droite si elle existe
-        if (index < 14) {
+        if (index < 13) {  // Changement de 14 à 13 pour éviter les index invalides
             gsap.to(`#letter-${index + 2}`, { color: '#a3e5ed', duration: 0.2 });
         }
     };
@@ -36,13 +32,13 @@ const EmailButton = () => {
         if (index > 0) {
             gsap.to(`#letter-${index - 1}`, { color: '#f5f5f5', duration: 0.2 });
         }
-        if (index > 0) {
+        if (index > 1) {  // Changement de 0 à 1 pour éviter les index invalides
             gsap.to(`#letter-${index - 2}`, { color: '#f5f5f5', duration: 0.2 });
         }
         if (index < 14) {
             gsap.to(`#letter-${index + 1}`, { color: '#f5f5f5', duration: 0.2 });
         }
-        if (index < 14) {
+        if (index < 13) {  // Changement de 14 à 13 pour éviter les index invalides
             gsap.to(`#letter-${index + 2}`, { color: '#f5f5f5', duration: 0.2 });
         }
     };

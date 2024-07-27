@@ -11,19 +11,19 @@ import SocialIcon from '../SocialIcon/SocialIcon'
 const Home = () => {
     return (
         <div>
-            <div className="w-screen h-screen flex flex-col items-center justify-center bg-customBlack overflow-hidden">
+            <div className="w-screen h-screen flex flex-col items-center justify-center bg-customBlack">
                 <h1 className='text-customBlue text-6xl font-bold font-font30'>Sylvain<span className='text-customWhite text-6xl font-font14'> Martel</span></h1>
 
                 <div>
                     <TextAnimate />
                 </div>
-                <div>
+                <div className='overflow-hidden'>
                     <TextDisplay />
                 </div>
-                <div>
+                <div className='overflow-hidden'>
                     <TextDisplay2 />
                 </div>
-                <div>
+                <div className='overflow-hidden'>
                     <TextDisplay3 />
                 </div>
                 <div>
