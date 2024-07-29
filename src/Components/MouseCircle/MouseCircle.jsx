@@ -6,10 +6,25 @@ const MouseCircle = () => {
 
     useEffect(() => {
         const handleMouseMove = (event) => {
-            gsap.to(circleRef.current, {
+            const circle = circleRef.current;
+            const circleWidth = circle.offsetWidth;
+            const circleHeight = circle.offsetHeight;
+            const maxX = window.innerWidth - circleWidth;
+            const maxY = window.innerHeight - circleHeight;
+
+            let x = event.clientX - circleWidth / 2;
+            let y = event.clientY - circleHeight / 2;
+
+            // Limitez la position pour éviter que le cercle ne sorte de la fenêtre
+            if (x < 0) x = 0;
+            if (y < 0) y = 0;
+            if (x > maxX) x = maxX;
+            if (y > maxY) y = maxY;
+
+            gsap.to(circle, {
                 duration: 0.8,
-                x: event.clientX - circleRef.current.offsetWidth / 2,
-                y: event.clientY - circleRef.current.offsetHeight / 2,
+                x: x,
+                y: y,
                 ease: "power2.out",
             });
         };

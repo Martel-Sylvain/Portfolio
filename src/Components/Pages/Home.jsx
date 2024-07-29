@@ -17,13 +17,13 @@ const Home = () => {
                 <div>
                     <TextAnimate />
                 </div>
-                <div className='overflow-hidden'>
+                <div>
                     <TextDisplay />
                 </div>
-                <div className='overflow-hidden'>
+                <div>
                     <TextDisplay2 />
                 </div>
-                <div className='overflow-hidden'>
+                <div>
                     <TextDisplay3 />
                 </div>
                 <div>
