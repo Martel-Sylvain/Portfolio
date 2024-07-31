@@ -26,7 +26,7 @@ const TextAnimate = () => {
                 {
                     opacity: 1,
                     y: 0,
-                    duration: 0.5,
+                    duration: 0.4,
                     stagger: 0.1,
                     ease: "power2.out",
                     onComplete: () => {
@@ -35,14 +35,14 @@ const TextAnimate = () => {
                             gsap.to(textRef.current.children, {
                                 opacity: 0,
                                 y: -20,
-                                duration: 0.5,
+                                duration: 0.4,
                                 stagger: 0.1,
                                 ease: "power2.in",
                                 onComplete: () => {
                                     setCurrentTextIndex((prev) => (prev + 1) % texts.length);
                                 }
                             });
-                        }, 1500); // Wait 1.5 seconds before starting the fade out animation
+                        }, 800); // Wait 1.5 seconds before starting the fade out animation
                     }
                 }
             );
